@@ -5,12 +5,12 @@
       
 
       <ul>
-        <% task.errors.full_tasks.each do |msg| %>
+        <% task.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
         <% end %>
       </ul>
     </div>
-  <% end %>
+<% end %>
   
   <%= f.label :status, 'ステータス' %>
   <%= f.text_field :status %>
